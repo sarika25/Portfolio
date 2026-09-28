@@ -31,8 +31,8 @@ const Projects = ({ darkMode }) => {
       description:
         "A responsive personal portfolio website built with React to showcase my technical skills, professional experience, projects, and career journey. It features a modern and interactive UI with dark mode, smooth animations, responsive layouts, project filtering, social links, and a dedicated contact section for professional inquiries.",
       technologies: ["React", "JavaScript", "Tailwind CSS", "Framer Motion"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/sarika25/Portfolio",
+      live: "https://sarika-portfolio-woad.vercel.app/",
     },
     {
       title: "CozyCup",

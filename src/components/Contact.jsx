@@ -28,8 +28,8 @@ const Contact = ({ darkMode }) => {
 
     try {
       await emailjs.send(
-        "service_t6gyzxg",
-        "template_4z04k3l",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           name: formData.name,
           email: formData.email,
@@ -37,7 +37,7 @@ const Contact = ({ darkMode }) => {
           message: formData.message,
         },
         {
-          publicKey: "f7DHpVxCgaZcDFO_o",
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
         },
       );
 

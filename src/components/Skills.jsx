@@ -47,7 +47,6 @@ const Skills = ({ darkMode }) => {
         "GitHub",
         "Postman",
         "VS Code",
-        "Docker",
         "Vercel",
         "Render",
       ],

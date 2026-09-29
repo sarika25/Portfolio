@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Sun, Moon, Menu, X } from "lucide-react";
+import { Sun, Moon, Menu, X, Phone } from "lucide-react";
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   const [activeSection, setActiveSection] = useState("home");
@@ -108,6 +108,26 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               )}
             </motion.button>
           </div>
+          {/* Let's Connect - Desktop */}
+          <motion.a
+            href="#contact"
+            onClick={() => handleNavClick("Contact")}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="hidden lg:flex items-center gap-2 px-4 py-1 rounded-lg bg-linear-to-r from-blue-600 to-blue-400 text-white font-medium shadow-md hover:shadow-[0_0_12px_rgba(59,130,246,0.5)] transition-all duration-300"
+          >
+            <span>Let's Connect</span> <Phone className="w-4 h-4" />
+          </motion.a>
+          {/* Phone Icon - Mobile */}
+          <motion.a
+            href="tel:+916206375515"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="lg:hidden p-2 rounded-full bg-linear-to-r from-blue-600 to-blue-400 text-white shadow-md"
+            aria-label="Call me"
+          >
+            <Phone className="w-5 h-5" />
+          </motion.a>
           <div className="flex lg:hidden items-center space-x-4 px-2">
             <motion.button
               whileTap={{ scale: 0.9 }}

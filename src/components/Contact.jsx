@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaEnvelope, FaMapMarkerAlt, FaBriefcase } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
+import { FaSquarePhone } from "react-icons/fa6";
 
 const Contact = ({ darkMode }) => {
   const [formData, setFormData] = useState({
@@ -77,7 +78,7 @@ const Contact = ({ darkMode }) => {
 
           <h2 className="text-3xl sm:text-4xl font-bold">Get In Touch</h2>
 
-          <div className="w-16 h-1 bg-linear-to-r from-blue-400 to-blue-600 mx-auto mt-3 rounded-full"></div>
+          <div className="w-16 h-1 bg-linear-to-r from-blue-600 to-blue-400 mx-auto mt-3 rounded-full"></div>
 
           <p
             className={`max-w-2xl mx-auto mt-4 text-sm sm:text-base leading-6 ${
@@ -124,9 +125,26 @@ const Contact = ({ darkMode }) => {
 
                 <a
                   href="mailto:sarikabharti97@gmail.com"
-                  className="text-sm font-medium hover:text-blue-400 transition-colors break-all"
+                  className="text-sm font-medium hover:text-blue-400 transition-colors break-all underline decoration-1 underline-offset-4"
                 >
                   sarikabharti97@gmail.com
+                </a>
+              </div>
+
+              {/* PHONE */}
+              <div>
+                <div className="flex items-center gap-3 mb-1">
+                  <FaSquarePhone className="text-blue-500 text-sm" />
+                  <span className="text-xs font-semibold text-gray-400">
+                    PHONE
+                  </span>
+                </div>
+
+                <a
+                  href="tel:+916206375515"
+                  className="text-sm font-medium hover:text-blue-400 transition-colors break-all underline decoration-1 underline-offset-4"
+                >
+                  +91-6206375515
                 </a>
               </div>
 
@@ -272,8 +290,8 @@ const Contact = ({ darkMode }) => {
               type="submit"
               disabled={sending}
               className="w-full mt-5 py-3 rounded-lg font-semibold text-white
-              bg-linear-to-r from-blue-400 to-blue-600
-              hover:from-blue-500 hover:to-blue-700
+              bg-linear-to-r from-blue-600 to-blue-400
+              hover:from-blue-700 hover:to-blue-500
               hover:shadow-[0_0_20px_rgba(59,130,246,0.35)]
               hover:-translate-y-0.5
               transition-all duration-300

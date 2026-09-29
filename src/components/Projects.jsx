@@ -219,8 +219,8 @@ const Projects = ({ darkMode }) => {
                     rel="noopener noreferrer"
                     className={`flex-1 flex items-center justify-center gap-2 px-4 py-3
                       text-sm font-semibold rounded-lg text-white
-                      bg-linear-to-r from-blue-500 to-blue-600
-                      hover:from-blue-600 hover:to-blue-700
+                      bg-linear-to-r from-blue-600 to-blue-500
+                      hover:from-blue-700 hover:to-blue-600
                       hover:scale-[1.03]
                       hover:shadow-[0_0_12px_rgba(59,130,246,0.35)]
                       transition-all duration-300
